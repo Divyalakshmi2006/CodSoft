@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen Shop Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #2980b9;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: #ecf0f1;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .hero button:hover {
+            background: #1c5980;
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pen Haven</h1>
+        <p>Your ultimate destination for premium pens and writing instruments</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Discover Elegance in Every Stroke</h2>
+        <p>Explore our exclusive collection of pens that blend luxury and functionality. Whether you're a writer, artist, or collector, Pen Haven has the perfect tool for your creativity.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/k37mg7k0/pen/x/v/x/luxor-9000028006-original-imafme6ka4wkewsy.jpeg?q=90&crop=falsealt="Luxury Pens">
+            <h3>Luxury Pens</h3>
+            <p>Handcrafted with precision, our luxury pens make a statement in every meeting.</p>
+        </div>
+        <div class="feature">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/8/HR/NV/DB/26109913/1-500x500.jpg" alt="Affordable Pens">
+            <h3>Affordable Options</h3>
+            <p>High-quality pens at prices that fit your budget, perfect for everyday use.</p>
+        </div>
+        <div class="feature">
+            <img src="https://images-cdn.ubuy.co.in/66142c84b96c2e2b6675e9e1-wordsworth-black-calligraphy-pen.jpg" alt="Gift Sets">
+            <h3>Gift Sets</h3>
+            <p>Beautifully packaged pen sets, ideal for gifts or special occasions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pen Haven. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
